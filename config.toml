@@ -1,6 +1,6 @@
 base_url = "https://leonewton.com"
-title = "not-matthias"
-description = "This is an example description"
+title = "Leo Newton"
+description = "Personal Blog"
 build_search_index = true
 generate_feeds = true
 compile_sass = true
@@ -43,8 +43,8 @@ menu = [
 ]
 
 socials = [
-    { name = "twitter", url = "https://twitter.com/not_matthias", icon = "twitter" },
-    { name = "github", url = "https://github.com/not-matthias/", icon = "github" },
+    { name = "twitter", url = "https://twitter.com/", icon = "twitter" },
+    { name = "github", url = "https://github.com/leonewt0n/", icon = "github" },
 ]
 
 stylesheets = [
