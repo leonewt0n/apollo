@@ -68,7 +68,7 @@ menu = [
 cp -r themes/apollo/content/* content/
 ```
 
-## Configuration
+## Configurationz
 
 Checkout all the [options you can configure](./content/posts/configuration.md) and the [example pages](./content/posts/).
 
