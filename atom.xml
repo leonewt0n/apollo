@@ -1,4 +1,32 @@
-<?xml version="1.0" encoding="UTF-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><title>not-matthias</title><subtitle>This is an example description</subtitle><link rel="self" type="application/atom+xml" href="https://leonewton.com/atom.xml"/><link rel="alternate" type="text/html" href="https://leonewton.com"/><generator uri="https://www.getzola.org/">Zola</generator><updated>2025-06-29T00:00:00+00:00</updated><id>https://leonewton.com/atom.xml</id><entry xml:lang="en"><title>Creating a Custom Homepage</title><published>2025-06-29T00:00:00+00:00</published><updated>2025-06-29T00:00:00+00:00</updated><author><name>
+<?xml version="1.0" encoding="UTF-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><title>Leo Newton</title><subtitle>Personal Blog</subtitle><link rel="self" type="application/atom+xml" href="https://leonewton.com/atom.xml"/><link rel="alternate" type="text/html" href="https://leonewton.com"/><generator uri="https://www.getzola.org/">Zola</generator><updated>2025-07-22T00:00:00+00:00</updated><id>https://leonewton.com/atom.xml</id><entry xml:lang="en"><title>IBM Mainframe Adventures</title><published>2025-07-22T00:00:00+00:00</published><updated>2025-07-22T00:00:00+00:00</updated><author><name>
+Unknown</name></author><link rel="alternate" type="text/html" href="https://leonewton.com/posts/ibm-mainframe-adventures/"/><id>https://leonewton.com/posts/ibm-mainframe-adventures/</id><content type="html" xml:base="https://leonewton.com/posts/ibm-mainframe-adventures/">&lt;p>&lt;img src="https://ipopell.art/content/images/size/w2000/2022/02/IBM-feature-banner.jpg" alt="IBM Banner" />&lt;/p>
+&lt;h3 id="free-course-on-coursera-with-mainframe-access">&lt;a class="zola-anchor" href="#free-course-on-coursera-with-mainframe-access" aria-label="Anchor link for: free-course-on-coursera-with-mainframe-access">Free Course on Coursera with Mainframe Access&lt;/a>&lt;/h3>
+&lt;p>https://www.coursera.org/learn/ibm-cobol-basics/home/module/1&lt;/p>
+&lt;p>Make free IBM account to access skylab. Skylab link in https://www.coursera.org/learn/ibm-cobol-basics/ungradedLti/SHpxP/system-familiarization.&lt;/p>
+&lt;h3 id="commands-to-install-zowe">&lt;a class="zola-anchor" href="#commands-to-install-zowe" aria-label="Anchor link for: commands-to-install-zowe">Commands to Install Zowe&lt;/a>&lt;/h3>
+&lt;pre class="z-code">&lt;code>&lt;span class="z-text z-plain">10.31.187.135 23
+&lt;/span>&lt;span class="z-text z-plain">mvscz11.ilsvpn.ibm.com 23
+&lt;/span>&lt;span class="z-text z-plain">
+&lt;/span>&lt;span class="z-text z-plain">TSOBA78
+&lt;/span>&lt;span class="z-text z-plain">B463764B
+&lt;/span>&lt;span class="z-text z-plain">
+&lt;/span>&lt;span class="z-text z-plain">export PATH=${PATH}:/u/ezcl/tsoba78/bin
+&lt;/span>&lt;span class="z-text z-plain">
+&lt;/span>&lt;span class="z-text z-plain">TERM=xterm vi example-zowe.yaml
+&lt;/span>&lt;span class="z-text z-plain">
+&lt;/span>&lt;span class="z-text z-plain">zwe install --allow-overwritten -v -c ~/example-zowe.yaml
+&lt;/span>&lt;span class="z-text z-plain">zwe init --config ~/example-zowe.yaml
+&lt;/span>&lt;span class="z-text z-plain">
+&lt;/span>&lt;span class="z-text z-plain">echo &amp;#39;put zowe.pax&amp;#39; | sftp TSOBA78@10.31.187.135 23:~/
+&lt;/span>&lt;span class="z-text z-plain">
+&lt;/span>&lt;span class="z-text z-plain">
+&lt;/span>&lt;/code>&lt;/pre>
+&lt;h3 id="write-down-credentials-and-ip">&lt;a class="zola-anchor" href="#write-down-credentials-and-ip" aria-label="Anchor link for: write-down-credentials-and-ip">Write Down Credentials and IP&lt;/a>&lt;/h3>
+&lt;p>Picture here&lt;/p>
+&lt;p>&lt;img src="/assets/img/posts/2024-11/lenovo-terminal.jpg" alt="terminal with changed imei" />&lt;/p>
+&lt;h2 id="sources">&lt;a class="zola-anchor" href="#sources" aria-label="Anchor link for: sources">Sources&lt;/a>&lt;/h2>
+&lt;p>https://techship.com/support/faq/how-to-send-at-commands-through-modem-manager/&lt;/p>
+&lt;p>https://docs.google.com/document/d/1kPl4pIGCkxKC07l9P7AnT7IfYt36lia5Fxoeh-tdhw4/edit?pli=1#heading=h.nj1rjoo4g5vx&lt;/p></content></entry><entry xml:lang="en"><title>Creating a Custom Homepage</title><published>2025-06-29T00:00:00+00:00</published><updated>2025-06-29T00:00:00+00:00</updated><author><name>
 Unknown</name></author><link rel="alternate" type="text/html" href="https://leonewton.com/posts/custom-homepage/"/><id>https://leonewton.com/posts/custom-homepage/</id><content type="html" xml:base="https://leonewton.com/posts/custom-homepage/">&lt;p>The Apollo theme provides a default homepage that lists your recent blog posts. However, you might want to create a custom homepage that better reflects your personality and work. This guide will walk you through the process of creating a custom homepage with the Apollo theme.&lt;/p>
 &lt;h2 id="1-create-a-custom-homepage-template">&lt;a class="zola-anchor" href="#1-create-a-custom-homepage-template" aria-label="Anchor link for: 1-create-a-custom-homepage-template">1. Create a Custom Homepage Template&lt;/a>&lt;/h2>
 &lt;p>The first step is to create a custom homepage template. In the root of your Zola project, create a new file at &lt;code>templates/home.html&lt;/code>. This file will contain the HTML for your custom homepage.&lt;/p>
@@ -105,7 +133,64 @@ C --> D[Complete]
 D --> E[Success]
 style A fill:#f9f,stroke:#333
 style E fill:#9f9,stroke:#333
-&lt;/pre></content></entry><entry xml:lang="en"><title>Configuring Apollo</title><published>2024-07-09T00:00:00+00:00</published><updated>2024-07-09T00:00:00+00:00</updated><author><name>
+&lt;/pre></content></entry><entry xml:lang="en"><title>India's Hidden Gold Mine</title><published>2024-11-05T00:00:00+00:00</published><updated>2024-11-05T00:00:00+00:00</updated><author><name>
+Unknown</name></author><link rel="alternate" type="text/html" href="https://leonewton.com/posts/indias-hidden-gold-mine/"/><id>https://leonewton.com/posts/indias-hidden-gold-mine/</id><content type="html" xml:base="https://leonewton.com/posts/indias-hidden-gold-mine/">&lt;h1 id="india-s-hidden-gold-mine">&lt;a class="zola-anchor" href="#india-s-hidden-gold-mine" aria-label="Anchor link for: india-s-hidden-gold-mine">India's Hidden Gold Mine&lt;/a>&lt;/h1>
+&lt;p>&lt;img src="https://i.natgeofe.com/n/b41b1997-d6e6-402a-aeb8-677ef7a57fdd/MM9940_220518_0582.jpg" alt="Pile of discarded clothes in India" />&lt;/p>
+&lt;h3 id="a-breakthrough-in-textile-recycling-turning-waste-into-wealth">&lt;a class="zola-anchor" href="#a-breakthrough-in-textile-recycling-turning-waste-into-wealth" aria-label="Anchor link for: a-breakthrough-in-textile-recycling-turning-waste-into-wealth">A Breakthrough in Textile Recycling: Turning Waste into Wealth&lt;/a>&lt;/h3>
+&lt;p>Did you know that globally, less than 0.5% of used textiles are recycled? Most of our old clothes and fabrics end up in landfills or are incinerated, contributing to significant environmental problems. But there's exciting news on the horizon! A revolutionary method is here to change the game in textile recycling.&lt;/p>
+&lt;h3 id="the-global-textile-waste-crisis">&lt;a class="zola-anchor" href="#the-global-textile-waste-crisis" aria-label="Anchor link for: the-global-textile-waste-crisis">The Global Textile Waste Crisis&lt;/a>&lt;/h3>
+&lt;p>As our world becomes more populated and wealthier, the demand for fiber production has skyrocketed. In 2021 alone, we produced a whopping 113 million tons of fiber, and this number could jump to 149 million tons by 2030. Fast fashion trends mean we’re tossing out clothes quicker than ever, leading to a massive build-up of waste—92 million tons globally each year. Shockingly, less than 1% of this waste is recycled. Instead, around 73% ends up in landfills or gets burned, 14% is lost during production and collection, and 12% is downcycled into lower-value products. This not only wastes precious resources but also wreaks havoc on our environment.&lt;/p>
+&lt;h3 id="the-challenges-and-innovations-in-textile-recycling">&lt;a class="zola-anchor" href="#the-challenges-and-innovations-in-textile-recycling" aria-label="Anchor link for: the-challenges-and-innovations-in-textile-recycling">The Challenges and Innovations in Textile Recycling&lt;/a>&lt;/h3>
+&lt;p>The most common recycling method is mechanical recycling, known for its simplicity and low cost. However, it has some serious limitations. It can’t handle textiles made of multiple fibers, additives, or colorants and often results in lower-quality products. Polyester, the superstar of textile fibers (also used in PET bottles), accounted for 54% of global fiber production in 2021. While chemical recycling techniques for polyester exist, mixed textile waste is tricky because it needs costly sorting and separation to avoid unwanted mixtures.&lt;/p>
+&lt;p>Enter our innovative solution: a new method that recycles mixed textile waste, including polyester, cotton, nylon, and spandex, using microwave-assisted glycolysis with a ZnO catalyst. This process completely breaks down polyester and spandex into their base components in just 15 minutes while keeping cotton and nylon intact. We’ve also delved into the effects of textile dyes and finishes, explored the potential products from each component, and assessed their market value. Plus, we've looked into the economic feasibility of this process, which could push the global textile recycling rate to an impressive 88%.&lt;/p>
+&lt;h3 id="turning-trash-into-treasure">&lt;a class="zola-anchor" href="#turning-trash-into-treasure" aria-label="Anchor link for: turning-trash-into-treasure">Turning Trash into Treasure&lt;/a>&lt;/h3>
+&lt;p>Here’s the exciting part: a company processing 500 kg of textile waste per hour, running 24 hours a day, could potentially rake in up to $140 million annually. Companies like SK Chemicals, already geared up to sell BHET, could soon be processing waste clothing, turning what was once trash into a treasure trove. Tweaking the above method to use cheaper forms of heating would help with adoption. But if you can afford massive Microwave vats, why not?&lt;/p>
+&lt;h3 id="sources">&lt;a class="zola-anchor" href="#sources" aria-label="Anchor link for: sources">Sources&lt;/a>&lt;/h3>
+&lt;ul>
+&lt;li>&lt;a href="https://www.petnology.com/online/news-detail/sk-chemicals-to-take-the-lead-in-the-76-billion-recycled-pet-market">SK Chemicals to Lead in the $7.6 Billion Recycled PET Market&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://www.science.org/doi/10.1126/sciadv.ado6827">Science.org Study on Chemical Recycling of Mixed Textile Waste&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;p>This breakthrough in textile recycling is not just a win for the environment but also a massive economic opportunity. Let's hope this innovative approach takes off, transforming how we handle textile waste and making our planet a cleaner, greener place.&lt;/p></content></entry><entry xml:lang="en"><title>Hacking Lenovo ESIM</title><published>2024-11-05T00:00:00+00:00</published><updated>2024-11-05T00:00:00+00:00</updated><author><name>
+Unknown</name></author><link rel="alternate" type="text/html" href="https://leonewton.com/posts/lenovo-esim/"/><id>https://leonewton.com/posts/lenovo-esim/</id><content type="html" xml:base="https://leonewton.com/posts/lenovo-esim/">&lt;h1 id="changing-lenovo-thinkpad-x13s-imei">&lt;a class="zola-anchor" href="#changing-lenovo-thinkpad-x13s-imei" aria-label="Anchor link for: changing-lenovo-thinkpad-x13s-imei">Changing Lenovo Thinkpad X13S IMEI&lt;/a>&lt;/h1>
+&lt;p>&lt;img src="https://i.pcmag.com/imagery/reviews/008qHtyerRycV1ifD1a1qMl-1.fit_scale.size_1028x578.v1660865414.jpg" alt="picture of thinkpad x13s" />&lt;/p>
+&lt;h3 id="download-special-ubuntu-image-with-working-kernel-parameters-and-dtb-table">&lt;a class="zola-anchor" href="#download-special-ubuntu-image-with-working-kernel-parameters-and-dtb-table" aria-label="Anchor link for: download-special-ubuntu-image-with-working-kernel-parameters-and-dtb-table">Download Special Ubuntu Image with working kernel parameters and DTB table&lt;/a>&lt;/h3>
+&lt;p>https://cdimage.ubuntu.com/daily-live/current/&lt;/p>
+&lt;p>https://cdimage.ubuntu.com/daily-live/current/oracular-desktop-arm64.iso&lt;/p>
+&lt;h3 id="boot-live-image">&lt;a class="zola-anchor" href="#boot-live-image" aria-label="Anchor link for: boot-live-image">Boot Live image&lt;/a>&lt;/h3>
+&lt;p>Boot live image. Follow directions here: https://discourse.ubuntu.com/t/status-of-ubuntu-support-for-lenovo-thinkpad-x13s/44652&lt;/p>
+&lt;h3 id="mask-and-stop-the-services">&lt;a class="zola-anchor" href="#mask-and-stop-the-services" aria-label="Anchor link for: mask-and-stop-the-services">Mask and stop the services:&lt;/a>&lt;/h3>
+&lt;p>&lt;code>sudo systemcti disable NetworkManager ModemManager&lt;/code>&lt;/p>
+&lt;p>&lt;code>sudo systemctl stop NetworkManager ModemManager&lt;/code>&lt;/p>
+&lt;h3 id="manually-run-with-debug-enabled">&lt;a class="zola-anchor" href="#manually-run-with-debug-enabled" aria-label="Anchor link for: manually-run-with-debug-enabled">Manually run with debug enabled:&lt;/a>&lt;/h3>
+&lt;p>&lt;code>sudo /us/sbin/ModemManager -debug&lt;/code>&lt;/p>
+&lt;h3 id="open-a-new-terminal-find-the-modem-index-and-send-the-at-command">&lt;a class="zola-anchor" href="#open-a-new-terminal-find-the-modem-index-and-send-the-at-command" aria-label="Anchor link for: open-a-new-terminal-find-the-modem-index-and-send-the-at-command">Open a new terminal, find the modem index and send the AT command:&lt;/a>&lt;/h3>
+&lt;p>&lt;code>sudo mmeli-m -command="AT&lt;/code>
+(mmcli -L to find the index)&lt;/p>
+&lt;h3 id="imei-repair">&lt;a class="zola-anchor" href="#imei-repair" aria-label="Anchor link for: imei-repair">IMEI Repair&lt;/a>&lt;/h3>
+&lt;p>You can also change the IMEI AT command, for this IMEl must be converted to GSM format.&lt;/p>
+&lt;ol>
+&lt;li>As an example, let's assume we want to set the IMEl to
+123456789012347&lt;/li>
+&lt;li>To the left of the IMEl add 80A:
+80A123456789012347&lt;/li>
+&lt;li>Break the numbers into pairs:
+80,A1,23,45,67,89,01,23,47&lt;/li>
+&lt;li>Reverse the two numbers in each pair:
+08,1A,32,54,76,98,10,32,74
+Remove the SIM card&lt;/li>
+&lt;li>Clear the old IMEl using this AT command:
+AT^NV=550,0&lt;/li>
+&lt;li>Confirm AT-GETIMEl now shows
++CME ERROR: memory failure
+Set the IMEl, inserting the number calculated above:
+AT^NV=550,9,"08,1A,32,54,76,98,10,32,74"&lt;/li>
+&lt;li>Confirm the IMEI was changed:
+AT GETIMEI should show the new IMEI&lt;/li>
+&lt;/ol>
+&lt;p>&lt;img src="/assets/img/posts/2024-11/lenovo-terminal.jpg" alt="terminal with changed imei" />&lt;/p>
+&lt;h2 id="sources">&lt;a class="zola-anchor" href="#sources" aria-label="Anchor link for: sources">Sources&lt;/a>&lt;/h2>
+&lt;p>https://techship.com/support/faq/how-to-send-at-commands-through-modem-manager/&lt;/p>
+&lt;p>https://docs.google.com/document/d/1kPl4pIGCkxKC07l9P7AnT7IfYt36lia5Fxoeh-tdhw4/edit?pli=1#heading=h.nj1rjoo4g5vx&lt;/p></content></entry><entry xml:lang="en"><title>Configuring Apollo</title><published>2024-07-09T00:00:00+00:00</published><updated>2024-07-09T00:00:00+00:00</updated><author><name>
 Unknown</name></author><link rel="alternate" type="text/html" href="https://leonewton.com/posts/configuration/"/><id>https://leonewton.com/posts/configuration/</id><content type="html" xml:base="https://leonewton.com/posts/configuration/">&lt;h1 id="site-configuration">&lt;a class="zola-anchor" href="#site-configuration" aria-label="Anchor link for: site-configuration">Site Configuration&lt;/a>&lt;/h1>
 &lt;h2 id="search-build-search-index">&lt;a class="zola-anchor" href="#search-build-search-index" aria-label="Anchor link for: search-build-search-index">Search (&lt;code>build_search_index&lt;/code>)&lt;/a>&lt;/h2>
 &lt;p>Enables or disables the search functionality for your blog.&lt;/p>
